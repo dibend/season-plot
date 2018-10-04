@@ -14,5 +14,6 @@ with open(sys.argv[1], 'r') as f:
 		else:
 			years[year] = [close]
 for year in years:
-	plt.plot(years[year])
+	plt.plot(years[year], label=year)
+plt.legend()
 plt.show()
